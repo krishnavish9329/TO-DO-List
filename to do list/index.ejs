@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="/todolist.css">
+</head>
+<body>
+    <div class="firstBox">
+        <h1 id="todoName">To-Do List</h1>
+        <div class="secBox">
+            <form action="" method="post">
+                <input type="text" placeholder="Enter the Note" id="todoInput" name="input">
+                <button type="submit" id="todoSubmit">submit</button>
+            </form>
+        </div>
+        <% if(data.length>0) {%>
+            <% for(let i=0;i<data.length;i++){%>
+        <div class="thredBox">
+            <samp class="output"> <%- data[i].data %></samp>
+            <button class="doneBut">Done</button>
+            <a href="/delete?data=<%- data[i].data%>"><button class="deleteBut">Delete</button></a>
+        </div> 
+
+        <% } %>
+        <% } else {%>
+            <div class="thredBox">
+                <samp class="output"> no data</samp>
+                <!-- <button class="doneBut">Done</button> -->
+                <button class="deleteBut"> Delete</button>
+            </div> 
+            <% }%>
+
+    </div>
+</body>
+<script src="/script.js"></script>
+</html>
