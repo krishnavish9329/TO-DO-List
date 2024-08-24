@@ -4,8 +4,6 @@ A To-Do list is a simple yet powerful tool for organizing tasks that need to be 
 
 # Key Features of a TODO List:
 Task Management: Add, edit, and delete tasks as needed. <br>
-Prioritization: Assign priorities to tasks (e.g., high, medium, low) to focus on the most important ones first.<br>
-Deadlines: Set due dates for tasks to ensure timely completion.<br>
 Categorization: Group tasks into categories or projects to keep things organized.<br>
 Progress Tracking: Mark tasks as complete as you work through the list.<br>
 Reminders/Notifications: Receive reminders to stay on top of deadlines and priorities.<br>
